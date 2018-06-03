@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 		resources :comments
 	end
 
+	resources :quotes do
+	end
+
 	
 
 	get '/about', to: 'pages#about'

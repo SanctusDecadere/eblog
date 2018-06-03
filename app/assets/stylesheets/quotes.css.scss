@@ -1,0 +1,22 @@
+body {
+
+	color:black;
+}
+
+
+
+
+.quote-wrap {
+	display:grid;
+	grid-template-rows:1fr 1fr;
+	grid-gap:2px;
+
+	.quote {
+		grid-row:1;
+	}
+
+	.cool-quote {
+		grid-row:2;
+	}
+
+}

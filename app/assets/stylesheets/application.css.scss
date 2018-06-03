@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
  *= require_self
  */
 
@@ -19,10 +19,61 @@
 // @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
+
+
+// html {
+// 	background-color:pink;
+
+// }
+
+
 html, body {
-	background-color:rgba(0, 0, 0, 0.5);
-	font-family: 'Raleway', sans-serif;
-}
+		padding:50px;
+		background-color:pink;
+		// background: linear-gradient(132deg, blue, red, yellow);
+		background: linear-gradient(132deg, #389917, red, yellow);
+		opacity:0.9;
+		background-size: 400% 400%;
+		// animation: BackgroundGradient 30s cubic-bezier(0, 0.47, 0.32, 1.97) 1;
+		}
+
+		@keyframes BackgroundGradient {
+			0% {background-position: 0% 50%;}
+			50% {background-position: 100% 50%;}
+			100% {background-position: 0% 50%;}
+		}
+
+
+
+	// 			h1 {
+	// 		border:solid green 5px;
+	// 		position: absolute;
+	// 		left: 30%;
+	// 		top: 50%;
+	// 		transform: translateX(-50) translateY(-50);
+	// 		/*font-family: Open Sans, sans-serif;*/
+	// 		font-family: 'Krona One', sans-serif;
+	// 		color: black;
+	// 		font-weight: 500;
+	// 		text-transform: uppercase;
+	// 		text-align: center;
+	// 		font-size: 2em;
+	// 		background-color: black;
+	// 		padding: 5px;
+	// 		background: linear-gradient(132deg, black, red);
+	// 		background-size: 400% 400%;
+	// 		animation: BackgroundGradient 8s ease infinite;
+
+	// 	}
+
+
+
+
+
+// html, body {
+// 	background-color:black;
+// 	font-family: 'Raleway', sans-serif;
+// }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
@@ -34,17 +85,22 @@ a {
 }
 
 #sidebar {
-	width: 250px;
 	position: fixed;
 	left: 0;
 	top: 0;
+	width: 150px;
 	height: 100%;
-	background: #f5f7f9;
-	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
+	// background: #f5f7f9;
+	// background:#05471D;
+	background:#0C1C10;
+	padding: 6em 0 0 0;
+	// border-right: 1px solid #d6dce0;
+	border-right:1px solid green;
+	border-left:1px solid green;
 	img {
-		width: 40px;
+		width: 50px;
 		position: absolute;
+		border:solid green 1px;
 		right: 3em;
 		top: 3em;
 	}
@@ -56,7 +112,9 @@ a {
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			color: #33acb7;
+			// color: #33acb7;
+			color:#AC541C;
+			// color:#0C6510;
 		}
 		li {
 			padding: .5em 0;
@@ -65,18 +123,21 @@ a {
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
-					color: #33acb7;
+					// color: #33acb7;
+					// color:aqua;
+					color:white;
 				}
 			}
 		}
 		.active {
 			a {
 				color: #33acb7;
+
 			}
 		}
 	}
 	.sign_in {
-		position: absolute;
+		// position: absolute;
 		right: 3em;
 		top: 80%;
 		font-size: .8em;
@@ -107,17 +168,34 @@ a {
    clear: both;
 }
 
+
+
+
+
 #main_content {
 	// background-color:red;
-	margin-left: 280px;
-	position:absolute;
+	margin-left:150px;
+	// position:absolute;
 	// width:100%;
 	#header {
+
+		position:fixed;
+		top:0px;
+		left:152px;
+		width:100%;
+		// width:70%;
+
 		// background-color:red;
 		// display:block;
 		padding: 1em 3em;
-		border-bottom: 1px solid #d6dce0;
-		background: #f5f7f9;
+
+		// border-bottom: 1px solid #d6dce0;
+		border-bottom: 1px solid green;
+
+
+		// background: #f5f7f9;
+		// background-color:blue;
+		background:#0C1C10;
 		color: #9eafba;
 		p {
 			display: inline;
@@ -127,21 +205,32 @@ a {
 			text-decoration: none;
 		}
 		.buttons {
-			background-color:orange;
+			background-color:clear;
+			position:fixed;
+			right:30px;
+			top:16px;
 			// display:block;
-			float: right;
+			float:right;
 			margin-top: -6px;
+
 			.button {
 				font-size: .8em;
 				margin-left: .5em;
 			}
 		}
 	}
+
+	.date {
+		padding-left:50px;
+	}
+
+
 	.post_wrapper {
 		padding: 3em;
 		border-bottom: 1px solid #d6dce0;
 		.title {
 			margin: 0;
+
 			a {
 				font-weight: 500;
 				text-decoration: none;
@@ -149,6 +238,7 @@ a {
 				font-size: 1.5em;
 				&:hover {
 					color: #33acb7;
+					// color:red;
 				}
 			}
 		}
@@ -274,3 +364,8 @@ a {
 		}
 	}
 }
+
+
+
+
+ // *= require_tree .

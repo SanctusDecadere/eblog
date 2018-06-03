@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Gradient Background</title>
+	<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+
+	<h1>Dark Horse Cider. <br>Lets get crunkified</h1>
+
+<style>
+
+
+
+html {
+	background-color: black;
+}
+
+	body {
+		background: linear-gradient(132deg, black, red, yellow);
+		background-size: 400% 400%;
+		animation: BackgroundGradient 30s cubic-bezier(0, 0.47, 0.32, 1.97) 1;
+		}
+
+		@keyframes BackgroundGradient {
+			0% {background-position: 0% 50%;}
+			50% {background-position: 100% 50%;}
+			100% {background-position: 0% 50%;}
+		}
+
+		h1 {
+			border:solid green 5px;
+			position: absolute;
+			left: 30%;
+			top: 50%;
+			transform: translateX(-50) translateY(-50);
+			/*font-family: Open Sans, sans-serif;*/
+			font-family: 'Krona One', sans-serif;
+			color: black;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 2em;
+			background-color: black;
+			padding: 5px;
+			background: linear-gradient(132deg, black, red);
+			background-size: 400% 400%;
+			animation: BackgroundGradient 8s ease infinite;
+		}
+	
+</style>
+
+</head>
+<body>
+	
+	
+</body>
+</html>
+
+
