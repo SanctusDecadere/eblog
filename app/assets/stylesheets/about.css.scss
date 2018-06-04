@@ -1,0 +1,21 @@
+.about-pic {
+	display:grid;
+	grid-template-columns:1fr;
+	position:fixed;
+	left:-130px;
+	top:-350px;
+	z-index:0;
+	width:100%;
+	transition: all 10s ease-in-out;
+	
+	
+}
+
+
+.about-pic:hover {
+		transform-origin: top center;
+		transform: scale(1.9);
+		filter: grayscale(100%);
+	}
+
+

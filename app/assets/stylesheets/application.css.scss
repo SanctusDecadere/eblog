@@ -28,6 +28,7 @@
 
 
 html, body {
+
 		padding:50px;
 		background-color:pink;
 		// background: linear-gradient(132deg, blue, red, yellow);
@@ -35,6 +36,7 @@ html, body {
 		opacity:0.9;
 		background-size: 400% 400%;
 		// animation: BackgroundGradient 30s cubic-bezier(0, 0.47, 0.32, 1.97) 1;
+		
 		}
 
 		@keyframes BackgroundGradient {
@@ -77,6 +79,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
+	// color:red;
 }
 
 a {
@@ -85,6 +88,7 @@ a {
 }
 
 #sidebar {
+	z-index:1;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -178,7 +182,7 @@ a {
 	// position:absolute;
 	// width:100%;
 	#header {
-
+		z-index:1;
 		position:fixed;
 		top:0px;
 		left:152px;
@@ -321,6 +325,7 @@ a {
 		#content {
 			h1 {
 				font-weight: 500;
+				color:red;
 			}
 			p {
 				font-size: 1.1em;

@@ -4,19 +4,42 @@ body {
 }
 
 
+.welcome {
+	text-align:center;
+	color:black;
+	
+
+}
 
 
 .quote-wrap {
 	display:grid;
-	grid-template-rows:1fr 1fr;
-	grid-gap:2px;
+	// grid-template-rows:1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr;
+	// grid-gap:1px;
+	text-align:center;
 
 	.quote {
-		grid-row:1;
+		// grid-row:1;
+		grid-column:1;
+		position:absolute;
+		padding-right:375px;
 	}
 
 	.cool-quote {
-		grid-row:2;
+		// grid-row:2;
+		grid-column:3;
 	}
 
+	.quote-head {
+			// color:#61C4C4;
+			color:white;
+			text-shadow:0 0 15px rgba(0, 0, 2,1);
+	}
+
+
 }
+
+
+
+	
