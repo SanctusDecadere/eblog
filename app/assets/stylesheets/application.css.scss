@@ -16,22 +16,11 @@
 
 
 @import 'normalize';
-// @import url('https://fonts.googleapis.com/css?family=Raleway');
-
-
-
-
-// html {
-// 	background-color:pink;
-
-// }
-
 
 html, body {
 
-		padding:50px;
+		padding:15px;
 		background-color:pink;
-		// background: linear-gradient(132deg, blue, red, yellow);
 		background: linear-gradient(132deg, #589917, red, yellow);
 		opacity:0.9;
 		background-size: 400% 400%;
@@ -46,10 +35,8 @@ html, body {
 		}
 
 
-
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
-	// color:red;
 }
 
 a {
@@ -65,10 +52,7 @@ a {
 	width: 150px;
 	height: 100%;
 	background: #f5f7f9;
-	// background:#05471D;
-	// background:#0C1C10;
 	padding: 6em 0 0 0;
-	// border-right: 1px solid #d6dce0;
 	border-right:1px solid green;
 	border-left:1px solid green;
 	img {
@@ -86,9 +70,7 @@ a {
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			// color: #33acb7;
 			color:#AC541C;
-			// color:#0C6510;
 		}
 		li {
 			padding: .5em 0;
@@ -97,11 +79,7 @@ a {
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
-					// color: #33acb7;
-					// color:aqua;
 					color:skyblue;
-					// color:white;
-
 				}
 			}
 		}
@@ -113,8 +91,8 @@ a {
 		}
 	}
 	.sign_in {
-		// position: absolute;
-		right: 3em;
+		position: absolute;
+		right: 4em;
 		top: 80%;
 		font-size: .8em;
 		color: #9eafba;
@@ -136,13 +114,13 @@ a {
 	}
 }
 
-.clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
+// .clearfix:after {
+//    content: ".";
+//    visibility: hidden;
+//    display: block;
+//    height: 0;
+//    clear: both;
+// }
 
 #main_content {
 	// background-color:red;
@@ -155,21 +133,9 @@ a {
 		top:0px;
 		left:152px;
 		width:100%;
-		// width:70%;
-
-		// background-color:red;
-		// display:block;
 		padding: 1em 3em;
-
-		// border-bottom: 1px solid #d6dce0;
 		border-bottom: 1px solid green;
-
-
-		// background: #f5f7f9;
-		// background-color:blue;
-		// background:#0C1C10;
 		background: #f5f7f9;
-		// color: #9eafba;
 		p {
 			display: inline;
 		}
@@ -182,7 +148,6 @@ a {
 			position:fixed;
 			right:30px;
 			top:16px;
-			// display:block;
 			float:right;
 			margin-top: -6px;
 
@@ -196,7 +161,6 @@ a {
 	.date {
 		padding-left:50px;
 	}
-
 
 	.post_wrapper {
 		padding: 3em;
@@ -348,5 +312,3 @@ a {
 
 
 
-
- // *= require_tree .

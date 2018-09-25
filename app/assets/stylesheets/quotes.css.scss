@@ -1,45 +1,45 @@
-body {
 
+body {
 	color:black;
 }
-
 
 .welcome {
 	text-align:center;
 	color:black;
-	
-
+	margin-top:30px;
 }
-
 
 .quote-wrap {
 	display:grid;
-	// grid-template-rows:1fr 1fr;
-	grid-template-columns:1fr 1fr 1fr;
-	// grid-gap:1px;
+	grid-template-columns:1fr 1fr;
 	text-align:center;
 
-	.quote {
-		// grid-row:1;
-		grid-column:1;
-		position:absolute;
-		padding-right:375px;
+		p {
+			font-size:18px;
+		}
+}
+
+// **********************************************************
+// Media Queries
+
+@media only screen and  ( max-width: 600px ) {
+	
+	.quote-wrap {
+		display:grid;
+		grid-template-columns:1fr;
+		text-align:center;
 	}
 
 	.cool-quote {
-		// grid-row:2;
-		grid-column:3;
+		grid-row:1;
+		border:solid red 2px;
 	}
 
-	.quote-head {
-			// color:#61C4C4;
-			color:white;
-			text-shadow:0 0 15px rgba(0, 0, 2,1);
+
+	.quote {
+		grid-row:2;
+		border: solid blue 2px;
 	}
 
 
 }
-
-
-
-	
