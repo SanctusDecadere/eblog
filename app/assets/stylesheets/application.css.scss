@@ -18,12 +18,12 @@
 @import 'normalize';
 
 html, body {
-
-		padding:15px;
-		background-color:pink;
+		padding:35px 0px 0px 0px;
+		// background-color:transparent;
 		background: linear-gradient(132deg, #589917, red, yellow);
 		opacity:0.9;
 		background-size: 400% 400%;
+
 		// animation: BackgroundGradient 30s cubic-bezier(0, 0.47, 0.32, 1.97) 1;
 		
 		}
@@ -66,9 +66,7 @@ a {
 		position:relative;
 		left:-20px;
 		list-style: none;
-		// float:left
 		text-align:center;
-		// padding-right: 3em;
 		.category {
 			font-weight: 700;
 			font-size: 0.7em;
@@ -126,7 +124,9 @@ a {
 // }
 
 #main_content {
-	margin-left:150px;
+	// width:calc(100% - 20px);
+	margin-right:20px;
+	margin-left:100px;
 	#header {
 		z-index:1;
 		position:fixed;
