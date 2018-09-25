@@ -32,7 +32,7 @@ html, body {
 		padding:50px;
 		background-color:pink;
 		// background: linear-gradient(132deg, blue, red, yellow);
-		background: linear-gradient(132deg, #389917, red, yellow);
+		background: linear-gradient(132deg, #589917, red, yellow);
 		opacity:0.9;
 		background-size: 400% 400%;
 		// animation: BackgroundGradient 30s cubic-bezier(0, 0.47, 0.32, 1.97) 1;
@@ -46,36 +46,6 @@ html, body {
 		}
 
 
-
-	// 			h1 {
-	// 		border:solid green 5px;
-	// 		position: absolute;
-	// 		left: 30%;
-	// 		top: 50%;
-	// 		transform: translateX(-50) translateY(-50);
-	// 		/*font-family: Open Sans, sans-serif;*/
-	// 		font-family: 'Krona One', sans-serif;
-	// 		color: black;
-	// 		font-weight: 500;
-	// 		text-transform: uppercase;
-	// 		text-align: center;
-	// 		font-size: 2em;
-	// 		background-color: black;
-	// 		padding: 5px;
-	// 		background: linear-gradient(132deg, black, red);
-	// 		background-size: 400% 400%;
-	// 		animation: BackgroundGradient 8s ease infinite;
-
-	// 	}
-
-
-
-
-
-// html, body {
-// 	background-color:black;
-// 	font-family: 'Raleway', sans-serif;
-// }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
@@ -94,9 +64,9 @@ a {
 	top: 0;
 	width: 150px;
 	height: 100%;
-	// background: #f5f7f9;
+	background: #f5f7f9;
 	// background:#05471D;
-	background:#0C1C10;
+	// background:#0C1C10;
 	padding: 6em 0 0 0;
 	// border-right: 1px solid #d6dce0;
 	border-right:1px solid green;
@@ -129,7 +99,9 @@ a {
 				&:hover {
 					// color: #33acb7;
 					// color:aqua;
-					color:white;
+					color:skyblue;
+					// color:white;
+
 				}
 			}
 		}
@@ -172,10 +144,6 @@ a {
    clear: both;
 }
 
-
-
-
-
 #main_content {
 	// background-color:red;
 	margin-left:150px;
@@ -199,8 +167,9 @@ a {
 
 		// background: #f5f7f9;
 		// background-color:blue;
-		background:#0C1C10;
-		color: #9eafba;
+		// background:#0C1C10;
+		background: #f5f7f9;
+		// color: #9eafba;
 		p {
 			display: inline;
 		}
@@ -362,10 +331,6 @@ a {
 	}
 }
 
-
-
-
-// *****************************************
 // *****************************************
 // *****************************************
 
@@ -380,19 +345,6 @@ a {
 
 // *****************************************
 // *****************************************
-// *****************************************
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
