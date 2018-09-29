@@ -12,7 +12,8 @@
  *
 
  *= require_self
- */
+
+ */ 
 
 
 @import 'normalize';
@@ -115,14 +116,6 @@ a {
 	}
 }
 
-// .clearfix:after {
-//    content: ".";
-//    visibility: hidden;
-//    display: block;
-//    height: 0;
-//    clear: both;
-// }
-
 #main_content {
 	// width:calc(100% - 20px);
 	margin-right:20px;
@@ -186,6 +179,7 @@ a {
 		}
 	}
 	#post_content {
+		margin-left: 20px; 
 		padding: 1em 3em;
 		.title {
 			font-weight: 500;
@@ -197,7 +191,9 @@ a {
 		.body {
 			font-size: 1.1em;
 			line-height: 1.75;
+
 		}
+
 		.date_and_author {
 			color: #9eafba;
 			margin: .5em 0 2em 0;
