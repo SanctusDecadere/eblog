@@ -12,35 +12,28 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
-
-  <!-- <script src="../../assets/javascripts/nav-bar.js"></script> -->
-
-
 </head>
 <body>
 
-<div id="sidebar">
+<div id="navbar">
       <div id="logo">
         <%= link_to root_path do %>
-
-
-        <a href="https://unsplash.com/photos/BsN-wFvyYAE" target="_blank"><img src="https://lh3.googleusercontent.com/I6nED3vu0FHg_gNRkeBapA010i-XcLMswRji_hqIdjMCpQlb6K1yjfKS1hxxdHFh1H5n8seAvyeqdulQMuwSk41LkbF0C-fWC4NAZa23g8fDlC2FeQqBVekFoPyB89_vFQqk30PQSg=w2400"/></a>
-
-          <!-- <img src="/assets/logo.jpg" alt="logo"> -->
-
+          <a class="site-logo" href="https://sekemilio.herokuapp.com">
+            <img src="https://lh3.googleusercontent.com/I6nED3vu0FHg_gNRkeBapA010i-XcLMswRji_hqIdjMCpQlb6K1yjfKS1hxxdHFh1H5n8seAvyeqdulQMuwSk41LkbF0C-fWC4NAZa23g8fDlC2FeQqBVekFoPyB89_vFQqk30PQSg=w2400"/>
+          </a>
         <% end %>
       </div>
 
 
-    <ul>
-      <li class="category">Website</li>
+    <ul class="navbar-links">
+      <!-- <li class="category">Website</li> -->
       <li><%= link_to "Blog", root_path %></li>
       <li><%= link_to "About", about_path %></li>
       <li><%= link_to "Quotes", quotes_path %></li>
-    </ul>
+    <!-- </ul> -->
 
-    <ul>
-      <li class="category">Social</li>
+    <!-- <ul class="nav-site-links"> -->
+      <!-- <li class="category">Social</li> -->
       <li><a href="https://twitter.com/SanctusDecadere">Twitter</a></li>
       <li><a href="https://www.instagram.com/sanctusdecadere/">Instagram</a></li>
       <li><a href="https://github.com/SanctusDecadere">Github</a></li>
@@ -49,11 +42,9 @@
 
 
     <% if !user_signed_in? %>
-    <p class="sign_in"><%= link_to "Sign in", new_user_session_path %></p>
+    <p class="sign-in"><%= link_to "Sign in", new_user_session_path %></p>
     <% end %>
 </div>
-
-
 
 
 
