@@ -24,6 +24,9 @@
 @import "cssdoctorreset";
 
 //Posts Styling *************
+
+
+
 	.post-wrapper {
 		margin:20px;
 		font-size:1.20em;
@@ -67,11 +70,8 @@
 	height:175px;
 	margin:10px;
 	border:solid 2px #8FB361;
-	// border-radius:5px;
 	border-radius:230px;
 }
-
-
 
 #content {
 	display:flex;
@@ -147,6 +147,7 @@ a {
 	color: inherit;
 }
 // *************************************************************************
+//Navbar
 
 #navbar {
 	display: flex;
@@ -174,7 +175,7 @@ a {
 
 		li {
 			color: var(--navbarLinkColor);
-			padding-right: 50px;
+			padding-right: 45px;
 			list-style-type: none;
 			font-weight: 900;
 			font-size: 1em;
@@ -188,10 +189,11 @@ a {
 	}
 
 	.sign-in {
+		text-align:center;
 		color: black;
 		font-weight: 900;
-		margin-right: 50px;
-		padding: 10px;
+		margin-right: 20px;
+		padding: 7px;
 		background-color: #7c79a4;
 		border-radius: 20px;
 		border: solid 2px black;
@@ -204,10 +206,16 @@ a {
 
 }
 
+// *******************************************************
+// *******************************************************
+
+// *******************************************************
+// *******************************************************
+
 
 // Mobile Queries
-@media(max-width: 600px) {
-
+@media all and (max-width: 600px) {
+//About page Images
 	.about-image-group {
 		display:flex;
 		margin-bottom:10px;
@@ -221,7 +229,40 @@ a {
 		border-radius:5px;
 	}
 
+//Posts *****************************
+	.posts-container {
+		display:flex;
+		justify-content:center;
+	}
 
+
+	//navbar *************************
+	.navbar-links {
+		// display:block !important;
+
+		li {
+			margin-right:-30px;
+			font-size: 0.9em !important;
+		}
+
+	}
+
+	.sign-in {
+		margin-right:10px !important;
+		font-size:12px;
+	}
+
+	.navbar-links {
+
+		li:nth-child(4) {
+			display:none !important;
+		}
+
+		li:nth-child(5) {
+			display:none !important;
+		}
+
+	}
 
 
 }
