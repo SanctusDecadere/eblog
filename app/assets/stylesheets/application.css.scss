@@ -25,7 +25,11 @@
 
 //Posts Styling *************
 
-
+	.posts-container {
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
 
 	.post-wrapper {
 		margin:20px;
@@ -175,7 +179,7 @@ a {
 
 		li {
 			color: var(--navbarLinkColor);
-			padding-right: 45px;
+			padding-right: 40px;
 			list-style-type: none;
 			font-weight: 900;
 			font-size: 1em;
@@ -206,6 +210,31 @@ a {
 
 }
 
+
+
+//Social Media Icons
+.fa {
+	font-size:20px;
+}
+
+.fa-twitter {
+	color:#1DA1F2;
+}
+
+.fa-facebook {
+	color:#0084FF;
+}
+
+.fa-instagram {
+	color:#262626;
+}
+
+.fa-github {
+	color:black;
+}
+
+
+
 // *******************************************************
 // *******************************************************
 
@@ -229,12 +258,6 @@ a {
 		border-radius:5px;
 	}
 
-//Posts *****************************
-	.posts-container {
-		display:flex;
-		justify-content:center;
-	}
-
 
 	//navbar *************************
 	.navbar-links {
@@ -252,17 +275,12 @@ a {
 		font-size:12px;
 	}
 
-	.navbar-links {
 
-		li:nth-child(4) {
-			display:none !important;
-		}
-
-		li:nth-child(5) {
-			display:none !important;
-		}
-
+	.fa {
+		font-size:16px;
 	}
+
+	
 
 
 }
