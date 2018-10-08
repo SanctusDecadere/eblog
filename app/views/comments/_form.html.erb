@@ -1,19 +1,21 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
 
-	<p>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-	</p>
+<!-- The Comment Section -->
 
-	<p>
-		<%= f.label :body %>
-		<%= f.text_area :body%>
-	</p>
+<div class="comment-area">
+	
+	<%= form_for([@post, @post.comments.build]) do |f| %>
 
-	<br>
+		<p><%= f.text_field :name, :placeholder => 'Name' %></p>
 
-	<p>
-		<%= f.submit %>
-	</p>
+		<p><%= f.text_area :body, :placeholder => 'Comment' %></p>
 
-<% end %>
+		<p><%= f.submit %></p>
+
+	<% end %>
+
+</div>
+
+
+
+
+
